@@ -1,0 +1,21 @@
+{
+  "name": "react-sample-old",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cash-cp": "^0.2.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "stencil-components": "^0.0.1"
+  },
+  "scripts": {
+    "prestart": "npm run get-stencil-components",
+    "start": "react-scripts start",
+    "prebuild": "npm run get-stencil-components",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "get-stencil-components": "cp -r ../../node_modules/stencil-components/dist/ ./public/static/js/"
+  }
+}

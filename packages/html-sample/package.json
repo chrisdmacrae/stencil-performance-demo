@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "npm run server",
+    "server": "browser-sync dist/ --serve-static ../../node_modules/stencil-components/dist/"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "cash-cp": "^0.2.0",
+    "stencil-components": "^0.0.1"
+  },
+  "name": "html-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}

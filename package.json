@@ -1,0 +1,17 @@
+{
+  "name": "stencil-talk",
+  "main": null,
+  "dependencies": {
+    "lerna": "^2.9.0",
+    "maid": "^0.3.0"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/angular-sample/**"
+    ]
+  },
+  "private": true
+}
