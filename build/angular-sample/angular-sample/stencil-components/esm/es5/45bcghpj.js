@@ -1,0 +1,2 @@
+/*! Built with http://stenciljs.com */
+import{h}from"./stencil-components.core.js";h("h1",null,"Stack Example");var DemoTriangle=function(){function e(){}return e.prototype.render=function(){return[h("h1",null,h("slot",null))]},Object.defineProperty(e,"is",{get:function(){return"demo-heading"},enumerable:!0,configurable:!0}),Object.defineProperty(e,"style",{get:function(){return"h1{color:#191e1e;border-bottom:1px solid #ddd;font-size:2.5em;font-weight:700;margin:0 0 15px;padding:0}"},enumerable:!0,configurable:!0}),e}();export{DemoTriangle as DemoHeading};
