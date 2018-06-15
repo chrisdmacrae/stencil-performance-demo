@@ -22,6 +22,15 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Integration with Stencil
+Stencil is integrated by doing things in three places:
+
+- In `src/app/app.module.ts` we import Angular's `CUSTOM_ELEMENTS_SCHEMA` and add that to our application's schema to allow for custom web elements in our component markup.
+- In `src/index.html` we add a `script` tag to our application entrypoint that references the Stencil component manifest
+- In `angular.json` we get angular to copy the component distributibles to the build directory using `projects.angular-sample.architect.assets`.
+
+Now when we use Stencil components in our Angular components, the Stencil component manifest will handle discovery, lazy loading, and rendering of our custom web components automatically.
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
