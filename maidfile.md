@@ -39,11 +39,11 @@ Gets the build contents of all packages and moves them into a deploy directory
 
 ```bash
 mkdir -p ./build
-cp -r ./src/ ./build/
-cp -r ./packages/angular-sample/dist/angular-sample/ ./build/angular-sample/
-cp -r ./packages/html-sample/build/ ./build/html-sample/
-cp -r ./packages/react-sample/build/ ./build/react-sample/
-cp -r ./packages/stencil-sample/www/ ./build/stencil-sample/
+cp -r ./src/ ./docs/
+cp -r ./packages/angular-sample/dist/angular-sample/ ./docs/angular-sample/
+cp -r ./packages/html-sample/build/ ./docs/html-sample/
+cp -r ./packages/react-sample/build/ ./docs/react-sample/
+cp -r ./packages/stencil-sample/www/ ./docs/stencil-sample/
 ```
 
 ## clean
