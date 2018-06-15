@@ -1,4 +1,6 @@
 *.log
 */dist/
 */public/
+*/build/
 node_modules/
+build/

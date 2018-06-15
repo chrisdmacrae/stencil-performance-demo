@@ -9,6 +9,7 @@
     "react-scripts": "1.1.4",
     "stencil-components": "^0.0.1"
   },
+  "homepage": "/react-sample/",
   "scripts": {
     "prestart": "npm run get-stencil-components",
     "start": "react-scripts start",

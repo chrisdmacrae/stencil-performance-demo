@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "build": "mkdir -p ./build && cp -r ../../node_modules/stencil-components/dist/ ./build cp -r ./src/* ./build",
     "start": "npm run server",
     "server": "browser-sync dist/ --serve-static ../../node_modules/stencil-components/dist/"
   },

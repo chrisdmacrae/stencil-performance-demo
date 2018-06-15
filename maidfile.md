@@ -31,6 +31,19 @@ Run tasks `clean` before this in parallel
 lerna exec "yarn build" --ignore=stencil-components
 ```
 
+## postbuild
+
+Gets the build contents of all packages and moves them into a deploy directory
+
+```bash
+mkdir -p ./build
+cp -r ./src/ ./build/
+cp -r ./packages/angular-sample/dist/angular-sample/ ./build/angular-sample/
+cp -r ./packages/html-sample/build/ ./build/html-sample/
+cp -r ./packages/react-sample/build/ ./build/react-sample/
+cp -r ./packages/stencil-sample/www/ ./build/stencil-sample/
+```
+
 ## clean
 
 This task removes the distribution build from every package.
