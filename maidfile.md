@@ -2,6 +2,8 @@
 
 This file handles all of the tasks for this demo project, using [`maid`](https://github.com/egoist/maid/).
 
+Every h2 with a code block is a command. E.g, `maid start`.
+
 ## start
 
 This task spins up a unique development server for every package.

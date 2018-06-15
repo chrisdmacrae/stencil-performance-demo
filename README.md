@@ -16,15 +16,15 @@ This demo illustrates 3 things:
 
 1. That Stencil creates truly future-proof, interoperable web components for web applications
 2. That Stencil is a viable frontend framework itself
-3. That Stencil is _really f$&%ing performant_.
+3. That Stencil is _very performant_.
 
 ## Structure
 
 ```
 |- angular-sample => A basic Angular application generated with angular-cli
 |- html-sample => A static HTML site served with browsersync
-|- react-sample => A basic create-react-app React project
-|- stencil-sample => A basic stencil webapp generated with `npm init stencil`
+|- react-sample => A basic `create-react-app` React project
+|- stencil-sample => A basic stencil application generated with `npm init stencil`
 |- stencil-components => A stencil component library that we use to show interoperability between all sample apps.
 ```
 
@@ -37,3 +37,6 @@ The `stencil-component/` folder is an example stencil project that generates a d
 Each `-sample` package is an example of how to integrate Stencil with that specific framework & stack.
 
 See the `README.md` in each package for instructions/explanations.
+
+## Usage
+All build commands are executed with lernajs and managed with [maid](./maidfile.md).
