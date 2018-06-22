@@ -52,17 +52,25 @@
         setInterval(this.tick.bind(this), 1000)
         
         function update() {
-            elapsed = Date.now() - start;
-            baseEl.setAttribute("elapsed", elapsed);
-            baseTriangle.setAttribute("seconds", seconds);
+            updateElapsed();
+            updateScale();
             requestAnimationFrame(update);
         }
 
+        function updateElapsed() {
+          elapsed = Date.now() - start;
+          baseEl.setAttribute("elapsed", elapsed);
+        }
+
+        function updateScale() {
+          var t = (elapsed / 1000) % 10;
+          scale = 1 + (t > 5 ? 10 - t : t) / 10;
+          baseEl.setAttribute("style", "--scale: " + scale)
+        }
+
         function tick() {
-            var t = (elapsed / 1000) % 10;
-            
             seconds = (seconds % 10) + 1;
-            scale = 1 + (t > 5 ? 10 - t : t) / 10;
+            baseTriangle.setAttribute("seconds", seconds);
           }
       </script>
       <script src="./stencil-components.js"></script>
