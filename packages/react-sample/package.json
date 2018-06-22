@@ -13,10 +13,10 @@
   "scripts": {
     "prestart": "npm run get-stencil-components",
     "start": "react-scripts start",
-    "prebuild": "npm run get-stencil-components",
     "build": "react-scripts build",
+    "prebuild": "npm run get-stencil-components",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "get-stencil-components": "cp -r ../../node_modules/stencil-components/dist/ ./public/static/js/"
+    "get-stencil-components": "mkdir -p ./public/static/js/ && cp -r ../../node_modules/stencil-components/dist/ ./public/static/js/"
   }
 }

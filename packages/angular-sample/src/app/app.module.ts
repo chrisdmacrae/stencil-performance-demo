@@ -15,7 +15,7 @@ import { HomeComponent } from './home/home.component';
   providers: [
     {
       provide: APP_BASE_HREF,
-      useValue : '/' 
+      useValue : '/angular-sample/' 
     }
   ],
   schemas: [
