@@ -1,5 +1,5 @@
 import "stencil-components"
-import { Component, Element, Prop, State } from '@stencil/core'
+import { Component, Element, Prop, State, Watch } from '@stencil/core'
 
 @Component({
   tag: 'app-home',
@@ -22,7 +22,8 @@ export class AppHome {
     this.intervalId = window.setInterval(tick, 1000);
   }
 
-  componentDidUpdate() {
+  @Watch("elapsed")
+  updateElapsed(newValue: number, oldValue: number) {
     const elapsed = this.elapsed;
     const t = (elapsed / 1000) % 10;
     this.scale = 1 + (t > 5 ? 10 - t : t) / 10;
