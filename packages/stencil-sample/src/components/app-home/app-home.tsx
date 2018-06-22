@@ -24,7 +24,7 @@ export class AppHome {
 
   @Watch("elapsed")
   updateElapsed(newValue: number, oldValue: number) {
-    const elapsed = this.elapsed;
+    const elapsed = newValue;
     const t = (elapsed / 1000) % 10;
     this.scale = 1 + (t > 5 ? 10 - t : t) / 10;
     this.el.style.setProperty('--scale', `${this.scale}`)
