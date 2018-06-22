@@ -1,2 +1,0 @@
-/*! Built with http://stenciljs.com */
-const{h:e}=window.StencilComponents;e("h1",null,"Stack Example");class t{render(){return[e("h1",null,e("slot",null))]}static get is(){return"demo-heading"}static get style(){return"h1{color:#191e1e;border-bottom:1px solid #ddd;font-size:2.5em;font-weight:700;margin:0 0 15px;padding:0}"}}export{t as DemoHeading};

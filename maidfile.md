@@ -38,12 +38,12 @@ lerna exec "yarn build" --ignore=stencil-components
 Gets the build contents of all packages and moves them into a deploy directory
 
 ```bash
-mkdir -p ./build
-cp -r ./src/ ./docs/
-cp -r ./packages/angular-sample/dist/angular-sample/ ./docs/angular-sample/
-cp -r ./packages/html-sample/build/ ./docs/html-sample/
-cp -r ./packages/react-sample/build/ ./docs/react-sample/
-cp -r ./packages/stencil-sample/www/ ./docs/stencil-sample/
+mkdir -p ./dist
+cp -r ./src/ ./dist/
+cp -r ./packages/angular-sample/dist/angular-sample/ ./dist/angular-sample/
+cp -r ./packages/html-sample/build/ ./dist/html-sample/
+cp -r ./packages/react-sample/build/ ./dist/react-sample/
+cp -r ./packages/stencil-sample/www/ ./dist/stencil-sample/
 ```
 
 ## clean

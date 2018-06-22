@@ -1,1 +1,0 @@
-// StencilComponents: CommonJS Main
