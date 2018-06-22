@@ -23,7 +23,7 @@ export class AppHome {
   }
 
   @Watch("elapsed")
-  updateElapsed(newValue: number, oldValue: number) {
+  updateElapsed(newValue: number) {
     const elapsed = newValue;
     const t = (elapsed / 1000) % 10;
     this.scale = 1 + (t > 5 ? 10 - t : t) / 10;
