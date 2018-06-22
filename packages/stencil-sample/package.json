@@ -15,7 +15,7 @@
     "test.watch": "jest --watch"
   },
   "dependencies": {
-    "@stencil/core": "0.9.7",
+    "@stencil/core": "latest",
     "@stencil/router": "latest",
     "stencil-components": "^0.0.1"
   },

@@ -18,7 +18,7 @@
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
-    "@stencil/core": "0.9.6",
+    "@stencil/core": "latest",
     "@stencil/router": "latest",
     "@stencil/sass": "latest"
   },
