@@ -26,6 +26,7 @@ export class AppHome {
     const elapsed = this.elapsed;
     const t = (elapsed / 1000) % 10;
     this.scale = 1 + (t > 5 ? 10 - t : t) / 10;
+    this.el.style.setProperty('--scale', `${this.scale}`)
   }
 
   tick() {
@@ -33,8 +34,6 @@ export class AppHome {
   }
 
   render() {
-    this.el.style.setProperty('--scale', `${this.scale}`)
-
     return (
       <div id="stencilApp">
         <demo-heading>
